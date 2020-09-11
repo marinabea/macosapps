@@ -18,7 +18,7 @@ class ViewController: NSViewController {
     }
     
     override func viewWillAppear() {
-        timerLabel.stringValue = "Remaining time: \(String(Int(abs(timer.fireDate.distance(to: Date()))/60)))min"
+        timerLabel.stringValue = "Remaining time: \(Int(abs(timer.fireDate.distance(to: Date()))/60))min"
     }
     
     override var representedObject: Any? {

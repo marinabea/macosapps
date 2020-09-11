@@ -26,6 +26,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         statusItem.button?.target = self
         statusItem.button?.action = #selector(showSettings)
         
+        startTimer()
         configurePopover()
     }
 
@@ -34,8 +35,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     
     func configurePopover() {
-        startTimer()
-            guard let alertVc = storyboard.instantiateController(withIdentifier: "AlertViewController") as? AlertViewController else {
+        guard let alertVc = storyboard.instantiateController(withIdentifier: "AlertViewController") as? AlertViewController else {
                 fatalError("Unable to find AlertViewController") }
         messagePopoverView.contentViewController = alertVc
         messagePopoverView.behavior = .transient
@@ -49,13 +49,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     
     @objc func showSettings() {
-        let popover = NSPopover()
-        guard var settingsVc = storyboard.instantiateController(withIdentifier: "SettingsViewController") as? ViewController else {
+        let settingsPopover = NSPopover()
+        guard let settingsVc = storyboard.instantiateController(withIdentifier: "SettingsViewController") as? ViewController else {
             fatalError("Unable to find SettingsViewController") }
         settingsVc.timer = timer
-        popover.contentViewController = settingsVc
-        popover.behavior = .transient
-        popover.show(relativeTo: statusItem.button!.bounds, of: statusItem.button!, preferredEdge: .maxY)
+        settingsPopover.contentViewController = settingsVc
+        settingsPopover.behavior = .transient
+        settingsPopover.show(relativeTo: statusItem.button!.bounds, of: statusItem.button!, preferredEdge: .maxY)
     }
 
     @objc func showNotification() {
