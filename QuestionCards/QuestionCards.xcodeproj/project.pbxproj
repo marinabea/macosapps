@@ -1,0 +1,373 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F14B64C4250AE65B00513950 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14B64C3250AE65B00513950 /* AppDelegate.swift */; };
+<<<<<<< HEAD
+		F14B64C8250AE66000513950 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F14B64C7250AE66000513950 /* Assets.xcassets */; };
+		F14B64CB250AE66000513950 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F14B64C9250AE66000513950 /* Main.storyboard */; };
+		F14B64D9250AEE4A00513950 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14B64D7250AEE4A00513950 /* QuestionViewController.swift */; };
+		F14B64DA250AEE4A00513950 /* QuestionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F14B64D8250AEE4A00513950 /* QuestionViewController.xib */; };
+		F14B64DD250AEE5D00513950 /* AnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14B64DB250AEE5D00513950 /* AnswerViewController.swift */; };
+		F14B64DE250AEE5D00513950 /* AnswerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F14B64DC250AEE5D00513950 /* AnswerViewController.xib */; };
+=======
+		F14B64C6250AE65B00513950 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14B64C5250AE65B00513950 /* ViewController.swift */; };
+		F14B64C8250AE66000513950 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F14B64C7250AE66000513950 /* Assets.xcassets */; };
+		F14B64CB250AE66000513950 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F14B64C9250AE66000513950 /* Main.storyboard */; };
+>>>>>>> 011a4ea99b449f9c9158dcc4093aa406cfe9a9f8
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F14B64C0250AE65B00513950 /* QuestionCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuestionCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F14B64C3250AE65B00513950 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+<<<<<<< HEAD
+=======
+		F14B64C5250AE65B00513950 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+>>>>>>> 011a4ea99b449f9c9158dcc4093aa406cfe9a9f8
+		F14B64C7250AE66000513950 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F14B64CA250AE66000513950 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F14B64CC250AE66000513950 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F14B64CD250AE66000513950 /* QuestionCards.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = QuestionCards.entitlements; sourceTree = "<group>"; };
+<<<<<<< HEAD
+		F14B64D7250AEE4A00513950 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		F14B64D8250AEE4A00513950 /* QuestionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionViewController.xib; sourceTree = "<group>"; };
+		F14B64DB250AEE5D00513950 /* AnswerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerViewController.swift; sourceTree = "<group>"; };
+		F14B64DC250AEE5D00513950 /* AnswerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnswerViewController.xib; sourceTree = "<group>"; };
+=======
+>>>>>>> 011a4ea99b449f9c9158dcc4093aa406cfe9a9f8
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F14B64BD250AE65B00513950 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F14B64B7250AE65B00513950 = {
+			isa = PBXGroup;
+			children = (
+				F14B64C2250AE65B00513950 /* QuestionCards */,
+				F14B64C1250AE65B00513950 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F14B64C1250AE65B00513950 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F14B64C0250AE65B00513950 /* QuestionCards.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F14B64C2250AE65B00513950 /* QuestionCards */ = {
+			isa = PBXGroup;
+			children = (
+				F14B64C3250AE65B00513950 /* AppDelegate.swift */,
+<<<<<<< HEAD
+				F14B64DB250AEE5D00513950 /* AnswerViewController.swift */,
+				F14B64D7250AEE4A00513950 /* QuestionViewController.swift */,
+=======
+				F14B64C5250AE65B00513950 /* ViewController.swift */,
+>>>>>>> 011a4ea99b449f9c9158dcc4093aa406cfe9a9f8
+				F14B64C7250AE66000513950 /* Assets.xcassets */,
+				F14B64C9250AE66000513950 /* Main.storyboard */,
+				F14B64CC250AE66000513950 /* Info.plist */,
+				F14B64CD250AE66000513950 /* QuestionCards.entitlements */,
+<<<<<<< HEAD
+				F14B64DC250AEE5D00513950 /* AnswerViewController.xib */,
+				F14B64D8250AEE4A00513950 /* QuestionViewController.xib */,
+=======
+>>>>>>> 011a4ea99b449f9c9158dcc4093aa406cfe9a9f8
+			);
+			path = QuestionCards;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F14B64BF250AE65B00513950 /* QuestionCards */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F14B64D0250AE66000513950 /* Build configuration list for PBXNativeTarget "QuestionCards" */;
+			buildPhases = (
+				F14B64BC250AE65B00513950 /* Sources */,
+				F14B64BD250AE65B00513950 /* Frameworks */,
+				F14B64BE250AE65B00513950 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuestionCards;
+			productName = QuestionCards;
+			productReference = F14B64C0250AE65B00513950 /* QuestionCards.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F14B64B8250AE65B00513950 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1170;
+				LastUpgradeCheck = 1170;
+				ORGANIZATIONNAME = "Marina Beatriz Santana de Aguiar";
+				TargetAttributes = {
+					F14B64BF250AE65B00513950 = {
+						CreatedOnToolsVersion = 11.7;
+					};
+				};
+			};
+			buildConfigurationList = F14B64BB250AE65B00513950 /* Build configuration list for PBXProject "QuestionCards" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F14B64B7250AE65B00513950;
+			productRefGroup = F14B64C1250AE65B00513950 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F14B64BF250AE65B00513950 /* QuestionCards */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F14B64BE250AE65B00513950 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+<<<<<<< HEAD
+				F14B64DE250AEE5D00513950 /* AnswerViewController.xib in Resources */,
+				F14B64C8250AE66000513950 /* Assets.xcassets in Resources */,
+				F14B64CB250AE66000513950 /* Main.storyboard in Resources */,
+				F14B64DA250AEE4A00513950 /* QuestionViewController.xib in Resources */,
+=======
+				F14B64C8250AE66000513950 /* Assets.xcassets in Resources */,
+				F14B64CB250AE66000513950 /* Main.storyboard in Resources */,
+>>>>>>> 011a4ea99b449f9c9158dcc4093aa406cfe9a9f8
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F14B64BC250AE65B00513950 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+<<<<<<< HEAD
+				F14B64DD250AEE5D00513950 /* AnswerViewController.swift in Sources */,
+				F14B64D9250AEE4A00513950 /* QuestionViewController.swift in Sources */,
+=======
+				F14B64C6250AE65B00513950 /* ViewController.swift in Sources */,
+>>>>>>> 011a4ea99b449f9c9158dcc4093aa406cfe9a9f8
+				F14B64C4250AE65B00513950 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F14B64C9250AE66000513950 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F14B64CA250AE66000513950 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F14B64CE250AE66000513950 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F14B64CF250AE66000513950 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		F14B64D1250AE66000513950 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = QuestionCards/QuestionCards.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = L68H6X9MR3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = QuestionCards/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mbsa.QuestionCards;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F14B64D2250AE66000513950 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = QuestionCards/QuestionCards.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = L68H6X9MR3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = QuestionCards/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mbsa.QuestionCards;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F14B64BB250AE65B00513950 /* Build configuration list for PBXProject "QuestionCards" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F14B64CE250AE66000513950 /* Debug */,
+				F14B64CF250AE66000513950 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F14B64D0250AE66000513950 /* Build configuration list for PBXNativeTarget "QuestionCards" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F14B64D1250AE66000513950 /* Debug */,
+				F14B64D2250AE66000513950 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F14B64B8250AE65B00513950 /* Project object */;
+}
