@@ -14,6 +14,7 @@
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="294" y="313" width="480" height="270"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1057"/>
+                        <value key="minSize" type="size" width="480" height="270"/>
                         <connections>
                             <outlet property="delegate" destination="lk6-6V-cku" id="K8U-0Y-ZKA"/>
                         </connections>
@@ -34,25 +35,59 @@
                         <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="yJk-g9-JRh">
-                                <rect key="frame" x="211" y="127" width="59" height="16"/>
-                                <textFieldCell key="cell" selectable="YES" title="Question" id="ci5-aB-YLX">
-                                    <font key="font" usesAppearanceFont="YES"/>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="3tv-wL-Fks">
+                                <rect key="frame" x="397" y="13" width="69" height="32"/>
+                                <buttonCell key="cell" type="push" title="Next" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="keH-ZC-S5v">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="nextQuestionButtonPressed:" target="0wZ-UG-5PK" id="vbA-d4-KV0"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="69Q-Xi-b7q">
+                                <rect key="frame" x="198" y="13" width="85" height="32"/>
+                                <buttonCell key="cell" type="push" title="Answer" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="lx9-xl-wbk">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                    <connections>
+                                        <action selector="showAnswerButtonPressed:" target="0wZ-UG-5PK" id="RzU-Qo-yzH"/>
+                                    </connections>
+                                </buttonCell>
+                            </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="P6f-Do-fLC">
+                                <rect key="frame" x="14" y="13" width="70" height="32"/>
+                                <buttonCell key="cell" type="push" title="Back" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ywT-LU-EAA">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="previewQuestionButtonPressed:" target="0wZ-UG-5PK" id="iYF-rA-Fie"/>
+                                </connections>
+                            </button>
+                            <textField verticalHuggingPriority="749" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="yJk-g9-JRh">
+                                <rect key="frame" x="194" y="121" width="93" height="29"/>
+                                <textFieldCell key="cell" selectable="YES" borderStyle="bezel" alignment="center" title="Question" id="ci5-aB-YLX">
+                                    <font key="font" size="20" name="Helvetica"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="underPageBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
                         </subviews>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="P6f-Do-fLC" secondAttribute="bottom" constant="20" id="EgZ-fW-fGT"/>
+                            <constraint firstAttribute="bottom" secondItem="69Q-Xi-b7q" secondAttribute="bottom" constant="20" id="FRy-w1-D80"/>
+                            <constraint firstAttribute="bottom" secondItem="3tv-wL-Fks" secondAttribute="bottom" constant="20" id="JIk-B4-ixn"/>
+                            <constraint firstAttribute="trailing" secondItem="3tv-wL-Fks" secondAttribute="trailing" constant="20" id="Nk0-vO-eQW"/>
+                            <constraint firstItem="yJk-g9-JRh" firstAttribute="centerX" secondItem="8RY-bC-ANp" secondAttribute="centerX" id="PYc-d6-T9w"/>
+                            <constraint firstItem="P6f-Do-fLC" firstAttribute="leading" secondItem="8RY-bC-ANp" secondAttribute="leading" constant="20" id="Tp4-x9-dpj"/>
                             <constraint firstItem="yJk-g9-JRh" firstAttribute="centerY" secondItem="8RY-bC-ANp" secondAttribute="centerY" id="a4n-iP-ryV"/>
-                            <constraint firstItem="yJk-g9-JRh" firstAttribute="centerX" secondItem="8RY-bC-ANp" secondAttribute="centerX" id="lLf-rz-0ht"/>
+                            <constraint firstItem="69Q-Xi-b7q" firstAttribute="centerX" secondItem="8RY-bC-ANp" secondAttribute="centerX" id="aSU-1Y-cfX"/>
+                            <constraint firstItem="69Q-Xi-b7q" firstAttribute="top" relation="greaterThanOrEqual" secondItem="yJk-g9-JRh" secondAttribute="bottom" constant="20" id="alm-JE-F1k"/>
+                            <constraint firstItem="yJk-g9-JRh" firstAttribute="top" relation="greaterThanOrEqual" secondItem="8RY-bC-ANp" secondAttribute="top" constant="20" id="if7-4r-IwK"/>
                         </constraints>
-                        <gestureRecognizers>
-                            <clickGestureRecognizer delaysPrimaryMouseButtonEvents="YES" numberOfClicksRequired="1" id="y15-Kv-Qt7"/>
-                        </gestureRecognizers>
                     </view>
                     <connections>
-                        <outlet property="gestureRecognizer" destination="y15-Kv-Qt7" id="B4z-rR-Jyl"/>
                         <outlet property="questionLabel" destination="yJk-g9-JRh" id="7hR-Tl-FGg"/>
                     </connections>
                 </viewController>
@@ -65,19 +100,19 @@
             <objects>
                 <viewController storyboardIdentifier="AnswerVC" id="hXR-vU-BQ1" customClass="AnswerViewController" customModule="QuestionCards" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="nq1-sT-J1L">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="300"/>
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="laa-m6-cft">
-                                <rect key="frame" x="216" y="142" width="49" height="16"/>
-                                <textFieldCell key="cell" selectable="YES" title="Answer" id="uZq-4W-mh8">
-                                    <font key="font" usesAppearanceFont="YES"/>
+                                <rect key="frame" x="201" y="121" width="79" height="29"/>
+                                <textFieldCell key="cell" selectable="YES" borderStyle="bezel" alignment="center" title="Answer" id="uZq-4W-mh8">
+                                    <font key="font" size="20" name="Helvetica"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="underPageBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="mzJ-tB-lks">
-                                <rect key="frame" x="4" y="262" width="70" height="32"/>
+                                <rect key="frame" x="14" y="13" width="70" height="32"/>
                                 <buttonCell key="cell" type="push" title="Back" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="rVi-KQ-Ose">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -88,10 +123,12 @@
                             </button>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="laa-m6-cft" firstAttribute="centerX" secondItem="nq1-sT-J1L" secondAttribute="centerX" id="FYb-bw-Dn4"/>
-                            <constraint firstItem="mzJ-tB-lks" firstAttribute="leading" secondItem="nq1-sT-J1L" secondAttribute="leading" constant="10" id="Fbm-Fo-N5O"/>
+                            <constraint firstItem="laa-m6-cft" firstAttribute="top" relation="greaterThanOrEqual" secondItem="nq1-sT-J1L" secondAttribute="top" constant="20" id="2Nc-p1-gZE"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="laa-m6-cft" secondAttribute="bottom" constant="20" id="2Sy-c7-dRA"/>
                             <constraint firstItem="laa-m6-cft" firstAttribute="centerY" secondItem="nq1-sT-J1L" secondAttribute="centerY" id="P8m-mv-Hb9"/>
-                            <constraint firstItem="mzJ-tB-lks" firstAttribute="top" secondItem="nq1-sT-J1L" secondAttribute="top" constant="10" id="iTA-fE-SeC"/>
+                            <constraint firstItem="mzJ-tB-lks" firstAttribute="leading" secondItem="nq1-sT-J1L" secondAttribute="leading" constant="20" id="YXY-cO-bQM"/>
+                            <constraint firstAttribute="bottom" secondItem="mzJ-tB-lks" secondAttribute="bottom" constant="20" id="iTA-fE-SeC"/>
+                            <constraint firstItem="laa-m6-cft" firstAttribute="centerX" secondItem="nq1-sT-J1L" secondAttribute="centerX" id="wzv-iM-K3W"/>
                         </constraints>
                     </view>
                     <connections>

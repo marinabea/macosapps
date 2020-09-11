@@ -1,0 +1,7 @@
+
+#1
+Grundsatz an dem man sein Handeln orientiert.
+Bsp.: DRY, Abstraktion, Strukturierung.
+---
+#2
+Nutzen maximieren und Kosten minimieren.

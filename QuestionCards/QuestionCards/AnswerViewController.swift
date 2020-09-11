@@ -22,6 +22,4 @@ class AnswerViewController: NSViewController {
     @IBAction func backButtonPressed(_ sender: NSButtonCell) {
         dismiss(self)
     }
-    
-    
 }
