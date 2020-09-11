@@ -10,12 +10,6 @@ import Cocoa
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
-
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 011a4ea99b449f9c9158dcc4093aa406cfe9a9f8
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
     }

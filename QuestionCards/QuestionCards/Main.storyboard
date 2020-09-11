@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="lk6-6V-cku">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="16097.3"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Window Controller-->
+        <scene sceneID="8ea-6r-V0A">
+            <objects>
+                <windowController id="lk6-6V-cku" sceneMemberID="viewController">
+                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="yYg-LT-jRC">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="294" y="313" width="480" height="270"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1057"/>
+                        <connections>
+                            <outlet property="delegate" destination="lk6-6V-cku" id="K8U-0Y-ZKA"/>
+                        </connections>
+                    </window>
+                    <connections>
+                        <segue destination="0wZ-UG-5PK" kind="relationship" relationship="window.shadowedContentViewController" id="EFF-Qo-l4g"/>
+                    </connections>
+                </windowController>
+                <customObject id="50a-6B-KWa" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="125"/>
+        </scene>
+        <!--Question View Controller-->
+        <scene sceneID="wTf-En-WdD">
+            <objects>
+                <viewController id="0wZ-UG-5PK" customClass="QuestionViewController" customModule="QuestionCards" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="8RY-bC-ANp">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="yJk-g9-JRh">
+                                <rect key="frame" x="211" y="127" width="59" height="16"/>
+                                <textFieldCell key="cell" selectable="YES" title="Question" id="ci5-aB-YLX">
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="yJk-g9-JRh" firstAttribute="centerY" secondItem="8RY-bC-ANp" secondAttribute="centerY" id="a4n-iP-ryV"/>
+                            <constraint firstItem="yJk-g9-JRh" firstAttribute="centerX" secondItem="8RY-bC-ANp" secondAttribute="centerX" id="lLf-rz-0ht"/>
+                        </constraints>
+                        <gestureRecognizers>
+                            <clickGestureRecognizer delaysPrimaryMouseButtonEvents="YES" numberOfClicksRequired="1" id="y15-Kv-Qt7"/>
+                        </gestureRecognizers>
+                    </view>
+                    <connections>
+                        <outlet property="gestureRecognizer" destination="y15-Kv-Qt7" id="B4z-rR-Jyl"/>
+                        <outlet property="questionLabel" destination="yJk-g9-JRh" id="7hR-Tl-FGg"/>
+                    </connections>
+                </viewController>
+                <customObject id="2LY-4F-Exz" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="551"/>
+        </scene>
+        <!--Answer View Controller-->
+        <scene sceneID="Bgi-XD-XK1">
+            <objects>
+                <viewController storyboardIdentifier="AnswerVC" id="hXR-vU-BQ1" customClass="AnswerViewController" customModule="QuestionCards" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="nq1-sT-J1L">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="laa-m6-cft">
+                                <rect key="frame" x="216" y="142" width="49" height="16"/>
+                                <textFieldCell key="cell" selectable="YES" title="Answer" id="uZq-4W-mh8">
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="mzJ-tB-lks">
+                                <rect key="frame" x="4" y="262" width="70" height="32"/>
+                                <buttonCell key="cell" type="push" title="Back" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="rVi-KQ-Ose">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                    <connections>
+                                        <action selector="backButtonPressed:" target="hXR-vU-BQ1" id="FC7-Bb-xfa"/>
+                                    </connections>
+                                </buttonCell>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="laa-m6-cft" firstAttribute="centerX" secondItem="nq1-sT-J1L" secondAttribute="centerX" id="FYb-bw-Dn4"/>
+                            <constraint firstItem="mzJ-tB-lks" firstAttribute="leading" secondItem="nq1-sT-J1L" secondAttribute="leading" constant="10" id="Fbm-Fo-N5O"/>
+                            <constraint firstItem="laa-m6-cft" firstAttribute="centerY" secondItem="nq1-sT-J1L" secondAttribute="centerY" id="P8m-mv-Hb9"/>
+                            <constraint firstItem="mzJ-tB-lks" firstAttribute="top" secondItem="nq1-sT-J1L" secondAttribute="top" constant="10" id="iTA-fE-SeC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="answerLabel" destination="laa-m6-cft" id="ueq-4a-Idr"/>
+                    </connections>
+                </viewController>
+                <customObject id="bBT-Av-XBD" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="896"/>
+        </scene>
+    </scenes>
+</document>
